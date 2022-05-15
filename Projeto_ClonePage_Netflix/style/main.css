@@ -1,0 +1,181 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*elemento base*/ 
+body{
+    background: rgb(14, 13, 13);
+    font-family: Arial, times, serif;
+    color: white;
+    
+}
+
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content:Between; alterado  */
+    
+
+}
+h2 {
+    margin-right:50px;
+       
+
+    
+}
+
+header .h2 {
+    margin-left: 50px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    padding-left: 10px;
+            
+}
+
+header nav a {
+        text-decoration:none;
+        color: rgb(248, 248, 248);
+        margin-right: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        
+        
+        
+                
+        
+}
+
+header nav a:hover {
+    color: #fff;
+
+    
+
+}
+.netflixlogo{
+    
+    padding-left: 90px;
+    
+
+}
+
+
+/* filme principal*/
+.filme-principal{
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),url('https://www.themoviedb.org/t/p/original/jLE5bsPA9xOKzBWOaOmKbp1DWQS.jpg');
+
+    height:580px; 
+    background-size:cover;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    
+}
+
+.titulo {
+    margin-top: 0%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 85px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}    
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    
+    
+    margin-left: 50px;
+    padding: 12px 40px;
+    margin-right: -40px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.botao i{
+    margin-right: 8px;
+    
+            
+}
+
+.filme-principal .container {
+    Width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+i {
+    font-size: 25px;
+    margin-right: 20px;
+    
+}
+
+.upicon {
+    position: relative;
+    left: 950px;
+    bottom: 13px;
+    
+
+    
+}
+
+.infodescricao {
+    position: relative;
+    top: 139px;
+    padding-left: 70px;
+    font-size: 22px;
+    font-weight:bold ;
+    
+    
+}
+
+a {
+    position: relative;
+    top: 16px;
+    left: 50px;
+    }
+
+.perfil{
+    border-radius: 3px;
+    position: relative;
+    top: 4px;
+}
+
