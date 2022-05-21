@@ -1,0 +1,274 @@
+/* Cores do site: */
+
+:root {
+    --laranja: #D23900;
+    --preto: black;
+    --branco: white;
+}
+
+/* Padrões */
+
+html {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 100%;
+    background-color: var(--branco);
+    cursor: default;
+}
+
+header, footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 0 5vw;
+}
+
+section {
+    margin: 6rem 10vw;
+}
+
+a {
+    color: var(--laranja);
+}
+
+button { 
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    background-color: var(--laranja);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* Header */
+
+header {
+    height: 4rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+header a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: var(--laranja); /* evita que ela comece branca */
+    transition: border-bottom 100ms;
+}
+
+header nav a:hover {
+    border-bottom: 3px solid var(--laranja);
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row;
+}
+
+nav li {
+    margin-left: 2rem;
+}
+
+/* banner */ 
+
+#banner {
+    background-image: url('./images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+#banner-container {
+    background-color: rgb(255, 255, 255, 0.75);
+    width: 25rem;
+    padding: 3rem;
+    margin: 3rem;
+}
+
+#banner-text {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#banner-price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--laranja);
+}
+
+#banner button {
+    background-color: var(--preto);
+    margin-top: 1rem;
+}
+
+/* Vantagens */
+
+#wrap-vantagens {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.item-vantagens {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    width: 15rem;
+    margin: 0 1rem;
+}
+
+.item-vantagens img {
+    margin-bottom: 1rem;
+    width: 75%;
+}
+
+/* CONHEÇA NOSSOS PLANOS */
+
+.plano {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 1rem;
+    border: 4px solid var(--preto);
+    text-align: center;
+    padding: 2rem 4rem;
+    width: fit-content;
+}
+
+.plano-velocidade {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.plano-unidade {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.plano-valor {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.plano-valor b {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.plano-wrap-servicos {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.plano-wrap-servicos img {
+    width: 3rem;
+}
+
+.plano button {
+    transition: transform 100ms;
+}
+
+.plano button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#wrap-planos {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Como contratar */
+
+#wrap-contratar {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.item-contratar {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    width: 15rem;
+    margin: 0 1rem;
+}
+
+.item-contratar img {
+    margin-bottom: 1rem;
+    width: 30%;
+}
+
+/* Footer */
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+footer a:hover {
+    color: var(--laranja);
+}
+
+#wrap-colunas-redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#wrap-colunas-rodape {
+    display: flex;
+    line-height: 2;
+}
+
+.coluna-rodape {
+    margin-right: 3rem;
+}
+
+footer b {
+    font-weight: 700;
+}
+
+#wrap-colunas-rodape a {
+    display: block;
+}
+
+
+#redes-sociais {
+    display: flex;
+    flex-flow: row;
+}
+
+#redes-sociais a {
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 3rem;
+}
